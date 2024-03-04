@@ -1,0 +1,99 @@
+{
+  "id": "cc4d75f2-d8d6-4a7e-97e2-8ebf601f2759",
+  "version": "2.0",
+  "name": "Try1",
+  "url": "https://dda.gov.in/",
+  "tests": [{
+    "id": "b9f60625-9119-441b-aa3a-45383b58a68b",
+    "name": "try1",
+    "commands": [{
+      "id": "54d0e875-a4a5-434f-afc6-98695d72979b",
+      "comment": "",
+      "command": "open",
+      "target": "https://dda.gov.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aabb9230-d208-451d-a129-92fcacf93c1a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1492x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86d8e3b0-42da-48ea-9228-8fb7c4b6b92a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Public Notices",
+      "targets": [
+        ["linkText=Public Notices", "linkText"],
+        ["css=.toolbar-icon-menu-link-content\\3A eed62619-a5e7-4111-b858-6afceb131f90", "css:finder"],
+        ["xpath=//a[contains(text(),'Public Notices')]", "xpath:link"],
+        ["xpath=//div[@id='block-nicemenus']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/public-notices')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Public Notices')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f190ad2-75f3-4836-869f-3e732ecea8cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=(//img[@alt='img'])[3]", "xpath:img"],
+        ["xpath=//div[@id='block-dda-content']/div/article/div/div/div/div[3]/div/div/a/span/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5f8c9f-9dc6-4367-92e1-1bd888053b3e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Archive Circulars",
+      "targets": [
+        ["linkText=Archive Circulars", "linkText"],
+        ["css=.orangebt", "css:finder"],
+        ["xpath=//a[contains(text(),'Archive Circulars')]", "xpath:link"],
+        ["xpath=//div[@id='block-dda-content']/div/div/div/div/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://dda.gov.in/Archive-circulars')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Archive Circulars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecbe5355-acad-42f1-8edf-018be2bf2c7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) img",
+      "targets": [
+        ["css=tr:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Circular : Opening of Public…']", "xpath:img"],
+        ["xpath=//div[@id='block-dda-content']/div/div/div/div[2]/div/table/tbody/tr/td[3]/p/a/img", "xpath:idRelative"],
+        ["xpath=//p/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9314",
+      "windowTimeout": 2000
+    }, {
+      "id": "3d8ad26a-dddc-42d4-b2db-59ca97f95d95",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9314}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "617b9fd2-7ab1-451d-bcc3-994f2ba7982f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://dda.gov.in/"],
+  "plugins": []
+}
